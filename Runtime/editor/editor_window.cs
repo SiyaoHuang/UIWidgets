@@ -220,9 +220,8 @@ namespace Unity.UIWidgets.editor {
             this.updatePhysicalSize();
             this.updateSafeArea();
             D.assert(this._surface == null);
-            this._surface = this.createSurface();
 
-            this._rasterizer.setup(this._surface);
+            // this._rasterizer.setup(this._surface);
             _windowAdapters.Add(this);
             this._alive = true;
         }

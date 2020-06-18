@@ -87,9 +87,7 @@ namespace Unity.UIWidgets.service {
 
         public void setIMEPos(Offset imeGlobalPos) {
             var uiWidgetWindowAdapter = Window.instance as UIWidgetWindowAdapter;
-            Offset screenPos = uiWidgetWindowAdapter != null 
-                ? uiWidgetWindowAdapter.windowPosToScreenPos(imeGlobalPos) 
-                : this._editorWindowPosToScreenPos(imeGlobalPos);
+            Offset screenPos = this._editorWindowPosToScreenPos(imeGlobalPos);
             
             Input.compositionCursorPos = new Vector2(screenPos.dx, screenPos.dy);
         }

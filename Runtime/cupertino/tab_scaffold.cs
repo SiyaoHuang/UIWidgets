@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Linq;
+using Unity.UIWidgets.CommonMethod;
 using Unity.UIWidgets.foundation;
 using Unity.UIWidgets.painting;
 using Unity.UIWidgets.rendering;
@@ -164,7 +164,8 @@ namespace Unity.UIWidgets.cupertino {
             for (int i = 0; i < this.widget.tabNumber; i++) {
                 this.tabs.Add(null);
             }
-            this.tabFocusNodes = Enumerable.Repeat(new FocusScopeNode(), this.widget.tabNumber).ToList();
+
+            this.tabFocusNodes = Enumerable.Repeat(new FocusScopeNode(), this.widget.tabNumber);
         }
 
         public override void didChangeDependencies() {

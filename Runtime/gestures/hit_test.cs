@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using System.Linq;
+using Unity.UIWidgets.CommonMethod;
 using Unity.UIWidgets.foundation;
 using Unity.UIWidgets.ui;
 
@@ -49,7 +49,7 @@ namespace Unity.UIWidgets.gestures {
 
         public override string ToString() {
             return
-                $"HitTestResult({(this._path.isEmpty() ? "<empty path>" : string.Join(", ", this._path.Select(x => x.ToString()).ToArray()))})";
+                $"HitTestResult({(this._path.isEmpty() ? "<empty path>" : string.Join(", ", this._path.Select(x => x.ToString())))})";
         }
     }
 }

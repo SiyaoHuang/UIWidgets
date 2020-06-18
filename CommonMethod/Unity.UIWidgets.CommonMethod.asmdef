@@ -1,0 +1,9 @@
+{
+    "name": "Unity.UIWidgets.CommonMethod",
+    "references": [
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
